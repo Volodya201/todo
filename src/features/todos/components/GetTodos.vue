@@ -45,7 +45,6 @@ function autoresize(event) {
     const padding = 2
     const height = Math.round((event.target.scrollHeight - padding) / 20)
     event.target.style.height = (height * 20 + 5) + 'px'
-    console.log(height * 20)
 }
 
 function drawTimer(timer:number): string {
