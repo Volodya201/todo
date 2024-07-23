@@ -8,14 +8,21 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "maska": "^3.0.0",
+    "pinia": "^2.1.7",
+    "prettier": "^3.3.3",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.0.3",
+    "vue-the-mask": "^0.11.1"
   },
   "devDependencies": {
+    "@types/vue-the-mask": "^0.11.5",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-typescript": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "sass": "^1.77.8",
+    "sass-loader": "^14.2.1",
     "typescript": "~4.5.5"
   },
   "browserslist": [

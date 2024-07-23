@@ -1,7 +1,5 @@
 <template>
-
     <input class="main-input" :placeholder="placeholder" @input="($event:ChangeEvent<HTMLInputElement>) => onInput($event.target.value)" :value="modelValue"  >
-
 </template>
 
 
@@ -21,21 +19,21 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
     .main-input {
-        color: #616f75;
-        border: 2px solid #e2e5e5;
+        color: var(--text-color);
+        border: 2px solid var(--border-color);
         border-radius: 8px;
         font-size: 18px;
         padding: 10px;
         font-size: 20px;
         transition: all 0.3s ease;
-    }
 
-    .main-input:focus {
-        border: 2px solid #73838b;
-        outline: none;
+        &:focus {
+            border: 2px solid var(--black);
+            outline: none;
+        }
     }
 
 </style>

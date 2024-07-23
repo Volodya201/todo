@@ -1,0 +1,90 @@
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--black);
+}
+
+.hr {
+    color: var(--border-color);
+    background-color: var(--border-color);
+}
+
+.create-todo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+}
+
+
+.todo {
+    &-list {
+        position: relative;
+
+        &-move,
+        &-enter-active,
+        &-leave-active {
+            transition: all 0.5s ease;
+        }
+
+        &-enter-from,
+        &-leave-to {
+            opacity: 0;
+        }
+
+        &-leave-active {
+            position: absolute;
+            width: 100%;
+        }
+    }
+
+    &-item {
+        background-color: var(--dark-grey);
+        border: 1px solid var(--border-color);
+        padding: 16px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 30px;
+    }
+
+    &-task {
+        color: var(--text-color);
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0;
+        text-align: left;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+    &-edit-task {
+        background: transparent;
+        color: var(--text-color);
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0;
+        text-align: left;
+        word-wrap: break-word;
+        word-break: break-all;
+        width: 100%;
+        resize: none;
+        height: 100%;
+        border-radius: 6px;
+        padding: 2px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &-buttons {
+        display: flex;
+        align-items: center;
+
+        & div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
